@@ -71,6 +71,7 @@ public class RealPathUtils {
         return cursor.getString(column_index);
     }
 
+    //api23
     public static String getRealPathFromURI_API23(Context context, Uri contentUri) {
         Cursor cursor = context.getContentResolver().query(contentUri, null, null, null, null);
         int idx;
