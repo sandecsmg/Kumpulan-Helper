@@ -20,10 +20,14 @@ public class MyFunction extends AppCompatActivity {
     public void mytoast(String isipesan){
         Toast.makeText(this, isipesan, Toast.LENGTH_SHORT).show();
     }
-    public void aksesclass(Class kelastujuan){
+    public void myintent(Class kelastujuan){
         startActivity(new Intent(c,kelastujuan));
     }
 
+     public void myanimation(EditText edtanimasi) {
+        animation = AnimationUtils.loadAnimation(c, R.anim.animasigetar);
+        edtanimasi.setAnimation(animation);
+    }
 
 
 
