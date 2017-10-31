@@ -32,9 +32,9 @@ public class GPStrack extends Service implements LocationListener {
     protected LocationManager locationManager;
     public static final String NEW_POSITION = "newPosition";
 
+    //create konstruktor
     public GPStrack(Context c) {
         this.context = c;
-
         getLocation();
     }
 
