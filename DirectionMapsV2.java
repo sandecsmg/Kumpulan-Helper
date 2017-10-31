@@ -50,7 +50,7 @@ public class DirectionMapsV2 {
 		this.context = context;
 	}
 
-	// menggambar polyline
+	// menggambar polyline dengan benar
 	public void gambarRoute(GoogleMap map, String dataPoly) {
 
 		polyz = decodePoly(dataPoly);
