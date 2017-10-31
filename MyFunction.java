@@ -9,8 +9,11 @@ import android.widget.Toast;
 
 
 public class MyFunction extends AppCompatActivity {
+    //variable global
     Animation animation;
     Context c;
+    public ProgressDialog mProgressDialog;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +30,16 @@ public class MyFunction extends AppCompatActivity {
      public void myanimation(EditText edtanimasi) {
         animation = AnimationUtils.loadAnimation(c, R.anim.animasigetar);
         edtanimasi.setAnimation(animation);
+    }
+    
+    public void showProgressDialog(String tittle) {
+        if (mProgressDialog == null) {
+            mProgressDialog = new ProgressDialog(this);
+            mProgressDialog.setTitle(tittle);
+            mProgressDialog.setMessage("Loading");
+            mProgressDialog.setIndeterminate(true);
+        }
+        mProgressDialog.show();
     }
 
 
