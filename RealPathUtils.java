@@ -18,6 +18,7 @@ import android.provider.MediaStore;
 
 public class RealPathUtils {
 
+    //surpress
     @SuppressLint("NewApi")
     public static String getRealPathFromURI_API19(Context context, Uri uri) {
         String filePath = "";
