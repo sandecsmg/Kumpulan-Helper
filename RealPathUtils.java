@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2017. Gilang Ramadhan (gilangramadhan96.gr@gmail.com)
+ * Copyright (c) 2017. Gilang Ramadhan (gilangr@imastudio.co.id)
+ * +6281904996393
  */
 
 package id.co.imastudio.forum.helper;
