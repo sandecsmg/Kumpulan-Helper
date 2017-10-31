@@ -64,6 +64,7 @@ public class RealPathUtils {
         return result;
     }
 
+    //below api 23
     public static String getRealPathFromURI_BelowAPI11(Context context, Uri contentUri) {
         String[] proj = {MediaStore.Images.Media.DATA};
         Cursor cursor = context.getContentResolver().query(contentUri, proj, null, null, null);
