@@ -97,6 +97,8 @@ public class HeroHelper {
             e.printStackTrace();
         }
     }
+    
+    //Mantabjiwa
 
     public static void error(Exception e, String x) {
         if (DEBUG == 1) {
