@@ -44,6 +44,7 @@ public class RealPathUtils {
     }
 
 
+    //new api
     @SuppressLint("NewApi")
     public static String getRealPathFromURI_API11to18(Context context, Uri contentUri) {
         String[] proj = {MediaStore.Images.Media.DATA};
