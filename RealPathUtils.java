@@ -19,6 +19,7 @@ import android.provider.MediaStore;
 
 public class RealPathUtils {
 
+    //surpress
     @SuppressLint("NewApi")
     public static String getRealPathFromURI_API19(Context context, Uri uri) {
         String filePath = "";
@@ -45,6 +46,7 @@ public class RealPathUtils {
     }
 
 
+    //new api
     @SuppressLint("NewApi")
     public static String getRealPathFromURI_API11to18(Context context, Uri contentUri) {
         String[] proj = {MediaStore.Images.Media.DATA};
@@ -64,6 +66,7 @@ public class RealPathUtils {
         return result;
     }
 
+    //below api 23
     public static String getRealPathFromURI_BelowAPI11(Context context, Uri contentUri) {
         String[] proj = {MediaStore.Images.Media.DATA};
         Cursor cursor = context.getContentResolver().query(contentUri, proj, null, null, null);
@@ -72,6 +75,7 @@ public class RealPathUtils {
         return cursor.getString(column_index);
     }
 
+    //api23
     public static String getRealPathFromURI_API23(Context context, Uri contentUri) {
         Cursor cursor = context.getContentResolver().query(contentUri, null, null, null, null);
         int idx;
