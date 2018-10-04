@@ -37,6 +37,8 @@ public class GPStrack extends Service implements LocationListener {
         this.context = c;
         getLocation();
     }
+    
+    //yy
 
     private Location getLocation() {
         try {
